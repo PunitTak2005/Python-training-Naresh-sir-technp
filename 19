@@ -1,0 +1,6 @@
+x={"name":"John","age": 36}
+y={"name":"John","age": 36}
+print(y)
+print(x)
+print(type(y))
+print(type(x))
