@@ -1,2 +1,2 @@
-# Python-training-Naresh-sir-technp
+# Python-training-Naresh-sir-techno
 python training at my college
