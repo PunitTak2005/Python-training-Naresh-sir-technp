@@ -1,0 +1,6 @@
+l1=["red","green","blue"]
+l2=[4,2,6,5,3]
+l3=[True,True,False]
+print(l1)
+print(l2)
+print(l3)
