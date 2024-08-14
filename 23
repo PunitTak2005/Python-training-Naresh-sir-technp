@@ -1,0 +1,3 @@
+l1=["red","green","blue","white"]
+l1[1:3]=["silver","magenta"]
+print(l1)
