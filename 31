@@ -1,0 +1,6 @@
+fruits=['apple','banana','cherry','kiwi','mango']
+color=['red']
+for x in fruits:
+    if "a" in x:
+        color.append(x)
+print(color)        
