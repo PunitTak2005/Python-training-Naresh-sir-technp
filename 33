@@ -1,0 +1,3 @@
+list=[23,45,66,77,88]
+list.sort()
+print(list)
