@@ -1,0 +1,3 @@
+list=["pineapple","apple","mango","orange","kiwi","Banana"]
+list.reverse()
+print(list)
