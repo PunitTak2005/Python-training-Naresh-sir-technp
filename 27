@@ -1,0 +1,4 @@
+l1=["red","green","blue","white"]
+l2=["purple","orange"]
+l1.remove("green")
+print(l1)
