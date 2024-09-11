@@ -1,0 +1,4 @@
+def fun():
+    print("Techno india")
+    fun()
+fun()    
