@@ -1,0 +1,57 @@
+def Push(stk, a):
+    stk.append(a)
+
+def Pop(stk):
+    if isEmpty(stk):
+        return "underflow"
+    else:
+        return stk.pop()
+
+def Peek(stk):
+    if isEmpty(stk):
+        return "underflow"
+    else:
+        return stk[-1]
+
+def Display(stk):
+    if isEmpty(stk):
+        print("stack empty")
+    else:
+        print(stk[-1], "<-top")
+        for a in range(len(stk)-2, -1, -1):
+            print(stk[a])
+
+def isEmpty(stk):
+    return len(stk) == 0
+
+# main
+stack = []
+while True:
+    print("Stack operation")
+    print("1. Push")
+    print("2. Pop")
+    print("3. Peek")
+    print("4. Display stack")
+    print("5. Exit")
+    ch = int(input("Enter your choice: "))
+    if ch == 1:
+        item = int(input("Enter the element to push: "))
+        Push(stack, item)
+    elif ch == 2:
+        item = Pop(stack)
+        if item == "underflow":
+            print("Underflow: stack is empty")
+        else:
+            print("Popped item is", item)
+    elif ch == 3:
+        item = Peek(stack)
+        if item == "underflow":
+            print("Underflow: stack is empty")
+        else:
+            print("Topmost item is", item)
+    elif ch == 4:
+        Display(stack)
+    elif ch == 5:
+        break
+    else:
+        print("Invalid choice")
