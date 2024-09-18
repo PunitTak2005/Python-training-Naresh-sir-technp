@@ -1,0 +1,20 @@
+def search_vowels(input_string):
+    vowels = "aeiouAEIOU"
+    found_vowels = []
+
+    for char in input_string:
+        if char in vowels:
+            found_vowels.append(char)
+
+    return found_vowels
+
+# Input from the user
+input_string = input("Enter a string: ")
+
+# Search for vowels
+vowels_in_string = search_vowels(input_string)
+
+if vowels_in_string:
+    print("Vowels found:", vowels_in_string)
+else:
+    print("No vowels found in the string.")
