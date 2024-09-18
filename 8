@@ -1,0 +1,10 @@
+# Program to write 5 names in student.txt file using Write Function
+import csv
+f=open("punit.csv","a")
+a=int(input('enter first number'))
+b=int(input('enter second number'))
+c=a*b
+f.write('\nA= ' + str(a))
+f.write('\tB= ' + str(b))
+f.write('\tmultiplicaton =' +str(c) + '\n\n')
+f.close()    
