@@ -1,0 +1,16 @@
+size = int(input("How many student details: "))  # Get the number of student details to enter
+obj1 = open("marks.txt", "w")  # Open the file in write mode, note: "w" should be lowercase
+
+for i in range(size):
+    roll = int(input("Enter roll: "))  # Example input: 102
+    name = input("Enter Name: ")  # Example input: hzl
+    marks = float(input("Enter marks: "))  # Example input: 9.0
+
+    # Corrected string concatenation
+    rec = str(roll) + "," + name + "," + str(marks) + "\n"
+
+    # Write the record to the file
+    obj1.write(rec)
+
+# Close the file
+obj1.close()
