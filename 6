@@ -1,0 +1,34 @@
+# File handling operations
+
+# 1. Writing to a file
+def write_to_file(filename, content):
+    with open(filename, "w") as file:  # "w" mode opens the file for writing, creates it if it doesn't exist
+        file.write(content)
+        print(f"Content written to {filename}")
+
+# 2. Reading from a file
+def read_from_file(filename):
+    try:
+        with open(filename, "r") as file:  # "r" mode opens the file for reading
+            content = file.read()
+            print(f"Content of {filename}:\n{content}")
+    except FileNotFoundError:
+        print(f"{filename} not found!")
+
+# 3. Appending to a file
+def append_to_file(filename, content):
+    with open(filename, "a") as file:  # "a" mode opens the file for appending
+        file.write(content)
+        print(f"Content appended to {filename}")
+
+# Example usage:
+filename = "example.txt"
+
+# Write to the file
+write_to_file(filename, "Hello, this is the first line.\n")
+
+# Append to the file
+append_to_file(filename, "This is an additional line.\n")
+
+# Read from the file
+read_from_file(filename)
