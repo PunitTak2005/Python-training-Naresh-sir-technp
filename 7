@@ -1,0 +1,8 @@
+# Program to write 5 names in student.txt file using Write Function
+import csv
+f=open("naresh123.csv","a")
+for i in range(5):
+    name=input("Enter Name:")
+    f.write(name)
+    f.write('\n')
+f.close()    
